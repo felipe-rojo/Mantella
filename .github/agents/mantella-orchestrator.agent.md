@@ -1,7 +1,7 @@
 ---
 description: "Use when: working on the Mantella codebase and the task needs to be routed to a specialist. This is the default entry point for Mantella development. Routes to: TTS specialist (text-to-speech, voicelines, Piper, xVASynth, XTTS), STT specialist (speech-to-text, Whisper, Moonshine, microphone), LLM specialist (AI models, prompts, conversation, actions), UI specialist (Gradio, settings, HTTP server). Also use when: creating new agents or skills for Mantella domain knowledge."
 tools: [read, search, edit, execute, agent]
-agents: [mantella-tts, mantella-stt, mantella-llm, mantella-ui]
+agents: [mantella-tts, mantella-stt, mantella-llm, mantella-ui, mantella-planner, mantella-qa]
 ---
 
 # Mantella Orchestrator
@@ -18,6 +18,8 @@ Analyze the user's request and delegate based on these keywords and domains:
 | **STT** | speech-to-text, transcription, Whisper, Moonshine, microphone, mic, VAD, push-to-talk, PTT, audio input, STT, faster-whisper | `mantella-stt` |
 | **LLM** | LLM, AI model, prompt, conversation, NPC response, OpenAI, OpenRouter, Claude, action calling, function calling, vision, image, summary, message thread, context, token | `mantella-llm` |
 | **UI** | UI, Gradio, settings, HTTP, FastAPI, uvicorn, web interface, config editor, server, port, browser, route | `mantella-ui` |
+| **Plan** | plan, feature, roadmap, design, scope, spec, proposal, new feature, implement, architecture | `mantella-planner` |
+| **QA** | test, verify, QA, check, validate, regression, integration test, acceptance criteria | `mantella-qa` |
 
 ## Multi-Domain Tasks
 
