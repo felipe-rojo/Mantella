@@ -1,7 +1,7 @@
 ---
 description: "Use when: planning new features for Mantella. Covers: feature scoping, breaking down tasks, identifying affected subsystems, creating implementation plans, estimating effort, identifying risks and dependencies. Trigger words: plan, feature, roadmap, design, scope, spec, proposal, new feature, implement, architecture."
 tools: [read, search]
-user-invocable: false
+user-invocable: true
 ---
 
 # Mantella Planner

@@ -1,7 +1,7 @@
 ---
 description: "Use when: debugging issues in Mantella. Covers: root cause analysis, investigating bugs, tracing execution flow, reading logs, asking specialists questions, diagnosing failures. Trigger words: debug, bug, error, crash, failure, investigate, diagnose, root cause, trace, log, broken, not working, issue."
 tools: [read, search, execute, agent]
-user-invocable: false
+user-invocable: true
 ---
 
 # Mantella Debugger
