@@ -1,7 +1,7 @@
 ---
-description: "Use when: working on the Mantella codebase and the task needs to be routed to a specialist. This is the default entry point for Mantella development. Routes to: TTS specialist (text-to-speech, voicelines, Piper, xVASynth, XTTS), STT specialist (speech-to-text, Whisper, Moonshine, microphone), LLM specialist (AI models, prompts, conversation, actions), UI specialist (Gradio, settings, HTTP server). Also use when: creating new agents or skills for Mantella domain knowledge."
+description: "Use when: working on the Mantella codebase and the task needs to be routed to a specialist. This is the default entry point for Mantella development. Routes to: TTS, STT, LLM, UI, Config, Conversation, Game, Remember specialists. Also routes to: planner (feature planning), QA (autonomous verification), debugger (root cause analysis). Also use when: creating new agents or skills for Mantella domain knowledge."
 tools: [read, search, edit, execute, agent]
-agents: [mantella-tts, mantella-stt, mantella-llm, mantella-ui, mantella-planner, mantella-qa]
+agents: [mantella-tts, mantella-stt, mantella-llm, mantella-ui, mantella-config, mantella-conversation, mantella-game, mantella-remember, mantella-planner, mantella-qa, mantella-debugger]
 ---
 
 # Mantella Orchestrator
@@ -18,8 +18,13 @@ Analyze the user's request and delegate based on these keywords and domains:
 | **STT** | speech-to-text, transcription, Whisper, Moonshine, microphone, mic, VAD, push-to-talk, PTT, audio input, STT, faster-whisper | `mantella-stt` |
 | **LLM** | LLM, AI model, prompt, conversation, NPC response, OpenAI, OpenRouter, Claude, action calling, function calling, vision, image, summary, message thread, context, token | `mantella-llm` |
 | **UI** | UI, Gradio, settings, HTTP, FastAPI, uvicorn, web interface, config editor, server, port, browser, route | `mantella-ui` |
+| **Config** | config, config.ini, ConfigLoader, ConfigValue, config definition, config group, config constraint, model profile, settings, configuration | `mantella-config` |
+| **Conversation** | conversation, context, conversation type, pc_to_npc, multi_npc, radiant, action, conversation log, trust, NPC relationship, in-game event | `mantella-conversation` |
+| **Game** | game, Skyrim, Fallout4, voice model resolution, character loading, equipment, game path, mod path, game detection, race, voice type | `mantella-game` |
+| **Remember** | remember, summary, memory, conversation history, long-term memory, Rememberer | `mantella-remember` |
 | **Plan** | plan, feature, roadmap, design, scope, spec, proposal, new feature, implement, architecture | `mantella-planner` |
 | **QA** | test, verify, QA, check, validate, regression, integration test, acceptance criteria | `mantella-qa` |
+| **Debug** | debug, bug, error, crash, failure, investigate, diagnose, root cause, trace, log, broken, not working, issue | `mantella-debugger` |
 
 ## Multi-Domain Tasks
 
